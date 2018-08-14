@@ -15,8 +15,6 @@ public class DBLog extends RealmObject {
     public String id= UUID.randomUUID().toString();
     Date createTime;
     float cost;
-    @Required
     DBType type;
-    @Required
     DBBook book;
 }

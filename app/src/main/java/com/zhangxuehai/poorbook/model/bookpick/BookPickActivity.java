@@ -1,12 +1,13 @@
 package com.zhangxuehai.poorbook.model.bookpick;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.zhangxuehai.poorbook.BaseActivity;
 import com.zhangxuehai.poorbook.R;
+import com.zhangxuehai.poorbook.conf.Page;
 
-public class BookPickActivity extends BaseActivity {
+@Route(path = Page.帐本选择)
+public class BookPickActivity extends BaseActivity<BookPickViewModel> {
 
     @Override
     protected int getContentViewRes() {
@@ -16,5 +17,6 @@ public class BookPickActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle("帐本选择");
     }
 }
