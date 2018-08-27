@@ -10,6 +10,14 @@ import io.realm.annotations.PrimaryKey;
  * 创建于2018/8/13 作者 章学海.
  */
 public class DBBook extends RealmObject{
+    public DBBook() {
+    }
+
+    public DBBook(String bookName) {
+        this.bookName = bookName;
+        createTime=new Date();
+    }
+
     @PrimaryKey
     public String bookName;
     public Date createTime;

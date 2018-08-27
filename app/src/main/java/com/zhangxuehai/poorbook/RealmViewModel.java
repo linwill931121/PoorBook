@@ -12,6 +12,7 @@ public class RealmViewModel extends ViewModel {
     public RealmViewModel() {
         realm=Realm.getDefaultInstance();
     }
+    public Realm getRealm(){return realm;}
 
     @Override
     protected void onCleared() {

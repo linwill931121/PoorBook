@@ -53,4 +53,7 @@ dependencies {
 
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.33'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+
+    compile 'com.qmuiteam:qmui:1.1.3'
 }
